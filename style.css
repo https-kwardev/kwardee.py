@@ -7,6 +7,10 @@ body{
 ul{
     list-style: none;
 }
+b{
+    color: red;
+    font-weight: 700;
+}
 
 a{
     text-decoration: none;
@@ -14,6 +18,9 @@ a{
 
 .toggle{
     display: none;
+}
+.show{
+    display:none;
 }
 
 #mainsec{
@@ -65,6 +72,7 @@ nav{
 }
 
 .logo{
+    left: 100%;
     font-size: 25px;
     font-weight: bold;
     color: #292929;
@@ -226,6 +234,15 @@ nav{
     transition: all ease 0.3s;
 }
 
+.about-info{
+    color: #bfbfbf;
+    padding: 10px;
+}
+.about-info h3, i{
+    color: orange;
+
+}
+
 
 
 
@@ -250,6 +267,9 @@ nav{
     display: flex;
     position: relative;
     align-items: center;
+}
+.section-title{
+    margin-top: 0px;
 }
 .skills-subtitle.snd{
     padding-top: 20px;
@@ -281,7 +301,10 @@ nav{
 .skill-bar{
     position: absolute;
     height: .25rem;
-    background-color: aquamarine;
+    background-color:  #1ed98b;
+    border-radius: 5px;
+    box-shadow: 0 0 20px aquamarine;
+    animation: blinQ 2s ease-in-out infinite;
 }
 .bar{
 
@@ -290,9 +313,10 @@ nav{
     bottom: -.75rem;
     height: .1rem;
     background-color:  #6c707c;
+
 }
 .skill_html{
-    width: 80%;
+    width: 90%;
 }
 .skill_js{
     width: 75%;
@@ -308,16 +332,92 @@ nav{
     width: 80%;
 }
 .skill_django{
-    width: 75%;
+    width: 60%;
 }
 .skill_csharp{
-    width: 40%;
+    width: 45%;
 }
 .skill_node{
-    width: 01%;
+    width: 03%;
+    
 }
+/*
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes react{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes jq{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 01%;
+    }
+}
+@keyframes py{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes dj{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes c{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 45%;
+    }
+}
+@keyframes node{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 03%;
+    }
+}*/
 
-
+@keyframes blinQ{
+    0%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 0 10px aquamarine;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
 
 
 
@@ -686,10 +786,7 @@ nav{
 .service-detail h1{
     color: #1ed98b;
 }
-.service-detail b{
-    color: red;
-    font-weight: 700;
-}
+
 
 
 
@@ -861,6 +958,9 @@ nav{
     .myself{
         width: 60%;
     }
+    .logo{
+        font-size:12px;
+    }
     .arrow{
         margin-bottom: 20px;
     }
@@ -870,6 +970,12 @@ nav{
     }
 }
 @media(max-width:400px){
+    .show{
+        display: inline;
+    }
+    .logo{
+        font-size:6px;
+    }
     .sbox{
         width: 100%;
         height: 400px;

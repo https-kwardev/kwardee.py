@@ -8,17 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icon.jpg">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!---MAIN SECTION--------------------------------------------->
     <section id="mainsec">
         <nav>
+            <img class="show" src="images/m4.jpg"  width="50px" height="50px" style="border-radius: 50%;">
             <a href="#" class="logo">Kwardee.py</a>
             <div class="toggle"></div>
             <ul class="menu" id="menu">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#aboutsec">About</a></li>
+                <li><a href="#skillsec">Skills</a></li>
                 <li><a href="#servicesec">Services</a></li>
                 <li><a href="#portfoliosec">Portfolio</a></li>
                 <li><a href="#contactsec">Contact</a></li>
@@ -57,12 +60,42 @@
                  And if I have a passion for it, I've probably spent 
                  time on it, perfecting the craft or its next on my list.</p>
                  <button>More Details</button>
+                 <div class="about-info">
+                    <h3>Infomation</h3>
+                    <div class="info-data">
+                        <i class='bx bxs-user info-icon'></i>
+                        <div>Kwanele Duma</div>
+                    </div>
+                    <div class="info-data">
+                        <i class='bx bxs-phone info-icon'></i>
+                        <div>--- --- ----</div>
+                    </div>
+                    <div class="info-data">
+                        <i class='bx bxs-envelope info-icon'></i>
+                        <div>kwanelegoldden531@gmail.com</div>
+                    </div>
+                </div>
+        
+                <div class="about-info">
+                    <h3>Experience</h3>
+                    <div class="info-data">
+                        <i class='bx bxs-briefcase info-icon'></i>
+                        <div>Unfoturnately I have no corporate
+                                experience under my belt yet.</div>
+                    </div>
+                    <div class="info-data">
+                        <i class='bx bxs-graduation' ></i>
+                        <div>(University of Johannesburg)</div>
+                        <div>Information Systems degree</div>
+                        <small>in progress</small>
+                    </div>
+                </div>
         </div>
         <div class="about-model">
-            <img src="images/about-model.jpg" width="400px" height="400px" alt="model"/>
+            <img src="images/about-model.jpg" width="300px" height="300px" alt="model"/>
         </div>
+        
     </section>
-
 
 
     <section id="skillsec">
@@ -74,7 +107,7 @@
             <h3 class="skills-subtitle">Frontend</h3>
             <div class="skill-data">
                 <span class="skill-name">HTML/CSS</span>
-                <div class="skill-number">80%</div>
+                <div class="skill-number">90%</div>
                 <div class="bar">
                     <div class="skill-bar skill_html"></div>
                 </div> 
@@ -112,14 +145,14 @@
             </div>
             <div class="skill-data">
                 <span class="skill-name">Django</span>
-                <span class="skill-number">75%</span>
+                <span class="skill-number">65%</span>
                 <div class="bar">
                     <div class="skill-bar skill_django"></div>
                 </div>
             </div>
             <div class="skill-data">
                 <span class="skill-name">C#</span>
-                <span class="skill-number">40%</span>
+                <span class="skill-number">45%</span>
                 <div class="bar">
                     <div class="skill-bar skill_csharp"></div>
                 </div>
@@ -131,9 +164,12 @@
                     <div class="skill-bar skill_node"></div>
                 </div>
             </div>
+            <p style="color: #6c707c;"><b>Note!</b> that I cannot actually quantify knowledge or how great I am at a particular subject.
+                Therefore the percentages you see here talk more about my confidence in working with that particular technology.
+                Also note that my confidence will keep changing as I am constently learning and putting into practice all the above and more.
+            </p>
         </div>
     </section>
-
 
 
 <!---SERVICE SECTION--------------------------------------------->
@@ -208,19 +244,19 @@
             <div class="pbox">
                 <div class="text-overlay">
                     <h1>Creativity</h1>
-                    <p>Personal Project</p>
-                    <p>Made with REACT.js, this is a frontend only todolist application.
-                        It is still to be upgraded into a more sophisticated Project
-                        Management software (PERT/CPM).
-                    </p>
+                    <p>Personal Project</p>>
                 </div>
                 <img src="images/memorygame.png" alt="portfolio">
             </div>
         <!----------pbox 3----------------------------->
             <div class="pbox">
                 <div class="text-overlay">
-                    <h1>Idea</h1>
+                    <h1>TodoList App</h1>
                     <p>Personal Project</p>
+                    <p>Made with REACT.js, this is a frontend only todolist application.
+                        It is still to be upgraded into a more sophisticated Project
+                        Management software (PERT/CPM).
+                    </p
                 </div>
                 <img src="images/todolist.png" alt="portfolio">
             </div>
@@ -230,10 +266,11 @@
                     <h1>Umlabalaba</h1>
                     <p>Personal Project</p>
                     <p>South African original board game. Some call it
-                        South Afrin chess. It currently doesn't exist on creen.
+                        South African chess. It currently doesn't exist on creen.
                         This is my attempt at making this great game available digitally 
                         for the first time in it's  history.
                     </p>
+                    <b>**under construction**</b>
                 </div>
                 <img src="images/u.png" alt="portfolio">
             </div>
@@ -242,6 +279,10 @@
                 <div class="text-overlay">
                     <h1>Memory Gme</h1>
                     <p>Personal Project</p>
+                    <p>A memory game the tests your ability to remember objects, shapes, words and colors.
+                        still  in it's basic form. A player is given seconds to study and memorize cards before they
+                         are flipped back and then the player must recall and choose matching cards.
+                    </p>
                 </div>
                 <img src="images/memogame.png" alt="portfolio">
             </div>
