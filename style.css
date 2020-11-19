@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+
 body{
     margin: 0px;
     padding: 0px;
@@ -117,7 +120,7 @@ nav{
 
 .myself h1{
     font-family: poppins;
-    font-size: 40px;
+    font-size: 35px;
     margin: 0px;
     letter-spacing: 3px;
     color: #f4f7ff;
@@ -589,7 +592,9 @@ nav{
 .text-overlay{
     font-size: 1.2rem;
     margin: 0px;
-
+}
+.text-overlay a{
+    margin: 0px;
 }
 .pbox:hover .text-overlay{
     display: flex;
